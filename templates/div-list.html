@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+   		<br>
+		<br>
+
+	{% for lesson in lessons %}
+	<div class="lessons">
+    	<h1>{{lesson}}</h1>   
+	
+
+		{%for subheadings in subheadings%}
+
+		<div class="subheadings">
+			<h2>{{ subheadings }}</h2>
+				<ul>
+					{% for item in subheadings_list %}
+						 <li>{{ item }}</li>
+					{% endfor %}	
+ 				</ul>
+ 		{% endfor %}
+
+ 		</div>
+
+ 		{%for subheadings1 in subheadings1%}
+
+		<div class="subheadings">
+			<h2>{{ subheadings1 }}</h2>
+				<ul>
+					{% for item in subheadings1_list %}
+						 <li>{{ item }}</li>
+					{% endfor %}	
+ 				</ul>
+ 		{% endfor %}
+
+ 		</div>
+	
+	{% for subheadings2 in subheadings2 %}
+ 	<div class="subheadings">
+ 		<h2>{{ subheadings2 }}</h2>
+ 		<ul>
+ 			{% for item in subheadings2_list %}
+ 				<li>{{ item }}</li>
+ 			{% endfor %}	
+ 		</ul>
+ 	{% endfor %}
+
+ 	</div>	
+	
+
+	{% for subheadings3 in subheadings3 %}
+ 	<div class="subheadings">
+ 		<h2>{{ subheadings3 }}</h2>
+ 		<ul>
+ 			{% for item in subheadings3_list %}
+ 				<li>{{ item }}</li>
+ 			{% endfor %}	
+ 		</ul>
+ 	{% endfor %}
+
+ 		</div>
+	
+
+		</div>
+	
+{% endfor %}
+
+
+
+{% endblock %}

@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+ 
+ <html>
+  <head>
+  <link rel="stylesheet" type="text/css" href="/stylesheets/style.css">
+  <style>
+    p {
+      color: white;
+    }
+    a {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="http://i.imgur.com/nLQznmQ.jpg?1">
+    <p>"Hi, I am Brenda Darling and I am new to Intro to Programming!!"</p>
+    <h1>Brenda Darling's Notes to Stage 5</h1>
+    <ul>
+        <a id="home" href="/">Stage 5 Notes</a>
+        <a id="codepen" href="codepen.html">Codepen</a>
+        <a id="guestbook" href="guestbook.html">Guestbook</a>
+        <a id="extra links" href="index.html">Extra Links</a>
+    </ul>
+  </header>
+  
+ 
+   <script>
+    alert("YAY JavaScript works! I am impressed!!!!!!")
+    $("button").on("click", function() {
+      alert("Clicked!");
+    });
+
+  </script>
+
+
+  {% block content %}
+    <div class="main_notes">
+    {% for each in subheadings %}
+      <div class="button" href=".">
+        <h1>{{each[0]}}</h1>
+      </div>
+        <div class="note_paragraph">
+          {{each[1]|safe}}
+        </div>
+    {% endfor %}  
+    </div>  
+  {% endblock %} 
+    
+  
+  </body>
+
+</html>

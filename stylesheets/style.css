@@ -1,0 +1,119 @@
+body {
+  background-color: #CC99FF;
+  color: purple;
+  padding: 20px 10px;
+  font-family: Calibri;
+  max-width: 2000px;
+  margin: 0 auto;
+  font-size: 1.4em;
+}
+
+.codepen_para {
+  color:purple;
+  font-size: 20px;
+  text-align: center;
+  margin-right: 175px;
+  margin-left: 175px;
+}
+
+.codepen_para a {
+  color: purple;
+}
+
+.concept {
+  background-color: #CC99FF;
+  padding: 4px;
+  margin: 10px;
+  border-radius: 4px;
+  color: purple;
+}
+
+.concept-title {
+  font-size: 30px;
+  margin: 8px;
+  text-align: center;
+  color: purple;
+}
+
+.cp_embed {
+  margin-right: 17%;
+  margin-left: 17%;
+}
+
+div {
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10px;
+ }
+
+div.subheadings {
+  border-width: 15px;
+  border-style: double;
+  border-color: purple;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  background-color: purple;
+}
+
+h2 {
+  font-size: 1.4em;
+  text-decoration: underline;
+}
+
+header {
+  text-align: center;
+  background: url("http://i.imgur.com/w7tAfy4.jpg?1");
+  background-size: cover;
+  color: white;
+}
+
+iframe {
+  width: 100%;
+}
+
+img {
+  margin: 40px 0px 0px 0px;
+  border: 7px solid white;
+  border-radius: 20px;
+}
+
+.indent {
+  margin-left: 38px;
+}
+
+.lesson {
+  background-color: purple;
+  border-radius: 50px;
+  color: black;
+  padding: 10px;
+  margin: 10px auto;
+  font-size: 20px;
+}
+
+li {
+  font-size: 20px;
+  line-height: 28px;
+}
+
+@media (max-width: 500px) {
+      h1 {
+        font-size: 36px;
+        padding: 5px;
+      }
+
+.post {
+  color:purple;
+  border: blue solid 6px;
+  margin-left: 220px;
+  margin-right: 220px;
+}
+
+ul {
+  list-style-type: none;
+  /* this removes the bullets that show up by default in unordered lists */
+}
+
+
